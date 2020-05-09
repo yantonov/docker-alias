@@ -1,0 +1,7 @@
+executable="${DOCKER_HOME}/docker"
+
+[alias]
+dangling_images="images -f dangling=true -q"
+stopped_containers="ps -f status=exited -q"
+purge_d="!docker dangling_images | xargs -n 1 docker rmi"
+purge_c="!docker stopped_containers | xargs -n 1 docker rm"
