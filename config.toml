@@ -1,6 +1,6 @@
 # you can define explicit location of docker executable
 # or use autodetect executable feature
-# executable="${DOCKER_HOME}/docker"
+executable="${DOCKER_HOME}/docker"
 
 [alias]
 dangling_images="images -f dangling=true -q"
